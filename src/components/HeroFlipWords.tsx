@@ -1,6 +1,6 @@
 import React from "react";
 import { FlipWords } from "../../components/ui/flip-words";
-import { wordsToAnimate } from "@/constants";
+import { wordsToAnimate } from "../../constants";
 
 export function HeroFlipWords() {
      return (

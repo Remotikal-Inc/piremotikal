@@ -45,38 +45,38 @@ export const products = [
 export const footerLinks = [
      {
           id: 1,
-          label: "About",
-          url: "https://about.remotikal.com"
-     },
-     {
-          id: 2,
           label: "Contact",
           url: "https://www.remotikal.com/contact"
      },
      {
-          id: 3,
+          id: 2,
           label: "Investors",
           url: "https://www.remotikal.com/ir"
      },
      {
-          id: 4,
+          id: 3,
           label: "Donate",
           url: "https://www.remotikal.com/donate"
      },
      {
-          id: 5,
+          id: 4,
           label: "Privacy",
           url: "https://www.remotikal.com/statements/privacy"
      },
      {
-          id: 6,
+          id: 5,
           label: "Terms",
           url: "https://www.remotikal.com/terms"
      },
      {
-          id: 7,
+          id: 6,
           label: "Products",
           url: "https://www.remotikal.com/products"
+     },
+     {
+          id: 7,
+          label: "Blog",
+          url: "/blog"
      }
 ];
 
@@ -92,11 +92,6 @@ export const navbarItems = [
           id: 2,
           name: "Products",
           slug: "/products"
-     },
-     {
-          id: 3,
-          name: "Services",
-          slug: "/services"
      },
      {
           id: 4,
@@ -118,5 +113,10 @@ export const navbarItems = [
           id: 7,
           name: "Skynet",
           slug: "/skynet"
+     },
+     {
+          id: 8,
+          name: "Blog",
+          slug: "/blog"
      },
 ]

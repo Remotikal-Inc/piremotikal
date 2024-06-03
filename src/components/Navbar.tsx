@@ -6,7 +6,7 @@ import Link from "next/link"
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "../../components/ui/navigation-menu"
 import React from "react";
 import DarkThemeToggler from "./DarkThemeToggler"
-import { navbarItems } from "@/constants"
+import { navbarItems } from "../../constants"
 
 type SVGProps = React.SVGProps<SVGSVGElement>;
 
