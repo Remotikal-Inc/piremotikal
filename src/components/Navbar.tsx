@@ -1,9 +1,9 @@
 'use client'
 
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
+import { Sheet, SheetTrigger, SheetContent } from "../../components/ui/sheet"
+import { Button } from "../../components/ui/button"
 import Link from "next/link"
-import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu"
+import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "../../components/ui/navigation-menu"
 import React from "react";
 import DarkThemeToggler from "./DarkThemeToggler"
 import { navbarItems } from "@/constants"

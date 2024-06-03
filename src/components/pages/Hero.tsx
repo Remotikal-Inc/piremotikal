@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import AnnouncementCard from "../../components/AnnouncementCard";
 import HeroCompanyLogos from "../../components/HeroCompanyLogos";
 import { HeroFlipWords } from "../../components/HeroFlipWords";
-import OrbitingCircles from "@/components/magicui/orbiting-circles";
+import OrbitingCircles from "../../../components/magicui/orbiting-circles";
 
 export default function Hero() {
      return (
