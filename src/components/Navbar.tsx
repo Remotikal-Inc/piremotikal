@@ -21,7 +21,7 @@ export default function Navbar() {
                          </Button>
                     </SheetTrigger>
                     <SheetContent side="left" className="dark:bg-neutral-900">
-                         <Link href="#" prefetch={false}>
+                         <Link href="/#home" prefetch={false}>
                               <MountainIcon className="h-10 w-10" />
                               <span className="sr-only">Acme Inc</span>
                          </Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
                          </div>
                     </SheetContent>
                </Sheet>
-               <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
+               <Link href="/#home" className="mr-6 hidden lg:flex" prefetch={false}>
                     <MountainIcon className="h-6 w-6" />
                     <span className="sr-only">Acme Inc</span>
                </Link>

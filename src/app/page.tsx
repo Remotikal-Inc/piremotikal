@@ -13,13 +13,13 @@ export default function Home() {
 
                <hr className="h-px my-20 md:py-0 bg-gray-200 border-0 dark:bg-gray-700" />
 
-               <div className='flex items-center' id="vision">
+               <div className='flex flex-col sm:flex-row items-center' id="mission">
                     <MissionPage />
                </div>
 
                <hr className="h-px my-20 md:py-0 bg-gray-200 border-0 dark:bg-gray-700" />
 
-               <div className=' flex items-center' id="mission">
+               <div className=' flex items-center' id="vision">
                     <VisionPage />
                </div>
 

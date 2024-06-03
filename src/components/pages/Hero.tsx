@@ -1,8 +1,9 @@
 import { Button } from "../../../components/ui/button";
 import AnnouncementCard from "../../components/AnnouncementCard";
 import HeroCompanyLogos from "../../components/HeroCompanyLogos";
-import { HeroFlipWords } from "../../components/HeroFlipWords";
 import OrbitingCircles from "../../../components/magicui/orbiting-circles";
+import { wordsToAnimateHero } from "../../../constants";
+import { FlipWords } from "../../../components/ui/flip-words";
 
 export default function Hero() {
      return (
@@ -15,7 +16,11 @@ export default function Hero() {
 
                     <div className="md:items-center">
                          <div>
-                              <HeroFlipWords />
+                              <div className='text-3xl md:text-4xl lg:text-5xl mx-auto font-normal text-slate-600 dark:text-slate-400'>
+                                   Create
+                                   <FlipWords words={wordsToAnimateHero} /> <br />
+                                   software with <span className="text-4xl md:text-5xl lg:text-6xl text-neutral-950 dark:text-neutral-100 font-bold">Remotikal, Inc.</span>
+                              </div>
 
                               <p className="mt-3 text-base sm:text-lg md:text-xl text-muted-foreground">
                                    We are an innovative company from India. We specialize in creating modern software, working on artificial intelligence (AI), developing neural networks, and engaging in kernel development.
