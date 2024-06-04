@@ -84,10 +84,12 @@ export default async function BlogArticle({
                     />
                </div>
 
-               <div className="max-w-sm ml-auto mt-10 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary text-right">
-                    ~ Written by {data.authorName}
+               <hr className="mt-10" />
+
+               <div className="dark:text-neutral-400 max-w-sm ml-auto mt-10 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary text-right">
+                    ~ Written by <span className="dark:text-neutral-200 font-semibold">{data.authorName}
                     <br/>
-                    ({data.authorPost})
+                    ({data.authorPost})</span>
                </div>
           </div>
      );

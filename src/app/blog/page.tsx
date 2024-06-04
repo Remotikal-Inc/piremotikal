@@ -45,7 +45,7 @@ export default async function page() {
                                    alt="image"
                                    width={500}
                                    height={500}
-                                   className="rounded-t-lg h-[200px] w-full object-cover"
+                                   className="rounded-t-lg h-[200px] w-full object-cover bg-transparent"
                               />
 
                               <CardContent className="pt-5 dark:bg-neutral-900 dark:border-neutral-900">
