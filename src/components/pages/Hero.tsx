@@ -4,6 +4,7 @@ import HeroCompanyLogos from "../../components/HeroCompanyLogos";
 import OrbitingCircles from "../../../components/magicui/orbiting-circles";
 import { wordsToAnimateHero } from "../../../constants";
 import { FlipWords } from "../../../components/ui/flip-words";
+import Link from "next/link";
 
 export default function Hero() {
      return (
@@ -27,8 +28,16 @@ export default function Hero() {
                               </p>
                               {/* Buttons */}
                               <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-                                   <Button size={"lg"} className="dark:hover:bg-neutral-300">Get started</Button>
-                                   <Button variant={"outline"} size={"lg"} className="dark:bg-neutral-900 dark:border-neutral-900 dark:hover:bg-neutral-800">Contact sales team</Button>
+                                   <Link href="/about">
+                                        <Button size={"lg"} className="dark:hover:bg-neutral-300">
+                                             About
+                                        </Button>
+                                   </Link>
+                                   <Link href="/products">
+                                        <Button variant={"outline"} size={"lg"} className="dark:bg-neutral-900 dark:border-neutral-900 dark:hover:bg-neutral-800">
+                                             Explore our Products
+                                        </Button>
+                                   </Link>
                               </div>
                               {/* End Buttons */}
                               <div className="mt-6 lg:mt-12">

@@ -17,7 +17,6 @@ export default function Footer() {
                </div>
                <div className="mx-auto flex flex-col items-center justify-between gap-8 md:flex-row md:gap-0">
                     <div className="gap-2">
-                         {/* TODO: LOGO */}
                          <Link href="/" className="text-lg font-semibold underline underline-offset-2">Remotikal, Inc.</Link>
                          <p>Remotikal, Inc. 2019 - 2024. All Rights Rights Reserved. Copyright Remotikal, Inc.</p>
                     </div>

@@ -12,7 +12,7 @@ export const skynetPageContent = [
                     <p>
                          With the SNP, Skynet can:
                     </p>
-                    <ul className="-mt-4">
+                    <ul style={{ listStyleType: "circle" }}>
                          <li>
                               <h2>Learn and Grow</h2>
                               <p>Just like how we learn from our experiences, Skynet can learn from new information thanks to the SNP. It can change and improve itself over time, becoming smarter and smarter.</p>
