@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { ContainerScroll } from "../../../components/ui/container-scroll-animation";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
-import { wordsToAnimateSkynet } from "../../../constants";
-import { FlipWords } from "../../../components/ui/flip-words";
-import SkynetPage from '../../components/pages/SkynetPage';
-import { VelocityScroll } from "../../../components/magicui/scroll-based-velocity";
+import { wordsToAnimateSkynet } from "@/constants";
+import { FlipWords } from "@/components/ui/flip-words";
+import SkynetPage from '@/components/pages/SkynetPage';
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 export default function page() {
      return (

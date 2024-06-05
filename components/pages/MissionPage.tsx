@@ -1,9 +1,9 @@
 'use client'
 
-import Globe from '../../../components/magicui/globe'
+import Globe from '@/components/magicui/globe'
 import React from 'react'
 import { useTheme } from 'next-themes';
-import { GLOBE_CONFIG_DARK, GLOBE_CONFIG_LIGHT } from '../../../constants';
+import { GLOBE_CONFIG_DARK, GLOBE_CONFIG_LIGHT } from '@/constants';
 
 export default function MissionPage() {
      const { theme } = useTheme()

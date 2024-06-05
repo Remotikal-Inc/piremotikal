@@ -1,4 +1,4 @@
-import ProductsPage from '../../components/pages/ProductsPage'
+import ProductsPage from '@/components/pages/ProductsPage'
 import React from 'react'
 
 export default function page() {

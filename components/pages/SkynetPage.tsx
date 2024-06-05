@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { TracingBeam } from "../../../components/ui/tracing-beam";
-import { skynetPageContent } from "../../../constants/JSXContants";
+import { TracingBeam } from "@/components/ui/tracing-beam";
+import { skynetPageContent } from "@/constants/JSXContants";
 
 export default function SkynetPage() {
      return (

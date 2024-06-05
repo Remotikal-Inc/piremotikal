@@ -1,9 +1,9 @@
-import { client, urlFor } from "../../lib/sanity";
-import { Card, CardContent } from "../../../../components/ui/card";
+import { client, urlFor } from "@/lib/sanity";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import { blogCard } from "../../lib/interface";
-import { Button } from "../../../../components/ui/button";
+import { blogCard } from "@/lib/interface";
+import { Button } from "@/components/ui/button";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 

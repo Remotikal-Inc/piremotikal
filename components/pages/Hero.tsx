@@ -1,9 +1,9 @@
-import { Button } from "../../../components/ui/button";
-import AnnouncementCard from "../../components/AnnouncementCard";
-import HeroCompanyLogos from "../../components/HeroCompanyLogos";
-import OrbitingCircles from "../../../components/magicui/orbiting-circles";
-import { wordsToAnimateHero } from "../../../constants";
-import { FlipWords } from "../../../components/ui/flip-words";
+import { Button } from "@/components/ui/button";
+import AnnouncementCard from "@/components/AnnouncementCard";
+import HeroCompanyLogos from "@/components/HeroCompanyLogos";
+import OrbitingCircles from "@/components/magicui/orbiting-circles";
+import { wordsToAnimateHero } from "@/constants";
+import { FlipWords } from "@/components/ui/flip-words";
 import Link from "next/link";
 
 export default function Hero() {

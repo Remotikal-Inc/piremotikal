@@ -1,7 +1,7 @@
 "use client";
 
-import { GLOBE_CONFIG_LIGHT } from "../../constants";
-import { cn } from "../../lib/utils";
+import { GLOBE_CONFIG_LIGHT } from "@/constants";
+import { cn } from "@/lib/utils";
 import createGlobe, { COBEOptions } from "cobe";
 import { useCallback, useEffect, useRef } from "react";
 import { useSpring } from "react-spring";

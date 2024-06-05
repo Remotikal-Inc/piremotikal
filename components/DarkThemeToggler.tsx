@@ -8,8 +8,8 @@ import {
      DropdownMenuContent,
      DropdownMenuItem,
      DropdownMenuTrigger,
-} from "../../components/ui/dropdown-menu"
-import { Button } from "../../components/ui/button"
+} from "@/components/ui/dropdown-menu"
+import { Button } from "@/components/ui/button"
 
 export default function DarkThemeToggler() {
      const { setTheme } = useTheme()
@@ -23,7 +23,7 @@ export default function DarkThemeToggler() {
                          <span className="sr-only">Toggle theme</span>
                     </Button>
                </DropdownMenuTrigger>
-               <DropdownMenuContent align="end" className="bg-transparent">
+               <DropdownMenuContent align="end" className="bg-transparent dark:bg-neutral-900">
                     <DropdownMenuItem onClick={() => setTheme("light")}>
                          Light
                     </DropdownMenuItem>

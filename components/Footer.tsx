@@ -1,4 +1,4 @@
-import { footerLinks } from "../../constants";
+import { footerLinks } from "@/constants";
 import Link from "next/link"
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {}
