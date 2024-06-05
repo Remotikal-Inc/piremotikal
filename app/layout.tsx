@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SkynetHighlightsPage from "@/components/pages/SkynetHighlightsPage";
 
 export const metadata: Metadata = {
      title: "Remotikal, Inc.",
@@ -29,7 +30,7 @@ export default function RootLayout({
                          {/* dark background */}
                          <div className="light:invisible dark:absolute dark:top-0 dark:z-[-2] dark:h-screen dark:w-full dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
-                         <div className="container">
+                         <div className='container'>
                               <Navbar />
                               <hr className="h-px hidden md:block md:py-0 bg-gray-200 border-0 dark:bg-gray-700" />
                               {children}

@@ -49,3 +49,42 @@
           --ring: 0 0% 83.1%;
      }
 }
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     color: white;
+     width: 100dvw;
+     overflow-x: hidden;
+     height: 100%;
+     background: #000;
+     border-color: #3b3b3b;
+     user-select: none;
+}
+
+canvas {
+     touch-action: none;
+}
+
+.screen-max-width {
+     position: relative;
+     max-width: 1120px;
+}
+
+@layer utilities {
+     .flex-center {
+          @apply flex items-center justify-center
+     }
+     
+     .control-btn {
+          @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center
+     }
+
+     .video-carousel_container {
+          @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]
+     }
+}

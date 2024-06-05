@@ -1,3 +1,4 @@
+import { highlightFirstVideo, highlightSecondVideo, highlightThirdVideo, highlightFourthVideo } from "@/utils";
 import { COBEOptions } from "cobe";
 
 export const products = [
@@ -182,39 +183,80 @@ export const GLOBE_CONFIG_LIGHT: COBEOptions = {
 
 export const reviews = [
      {
-          name: "Jack",
-          username: "@jack",
-          body: "I've never seen anything like this before. It's amazing. I love it.",
+          name: "Arjun Vijay Prakash",
+          username: "@arjuncodess",
+          post: "Full Stack Developer",
+          body: "Amazing no-code tool(Sketchware) built by Besome & Remotikal(maintained by the latter)! Advanced functionalities like Firebase integration or even text-to-speech or vice verse are so simple to implement.",
           img: "https://avatar.vercel.sh/jack",
      },
      {
           name: "Jill",
           username: "@jill",
+          post: "software developer",
           body: "I don't know what to say. I'm speechless. This is amazing.",
           img: "https://avatar.vercel.sh/jill",
      },
      {
           name: "John",
           username: "@john",
+          post: "software developer",
           body: "I'm at a loss for words. This is amazing. I love it.",
           img: "https://avatar.vercel.sh/john",
      },
      {
           name: "Jane",
           username: "@jane",
+          post: "software developer",
           body: "I'm at a loss for words. This is amazing. I love it.",
           img: "https://avatar.vercel.sh/jane",
      },
      {
           name: "Jenny",
           username: "@jenny",
+          post: "software developer",
           body: "I'm at a loss for words. This is amazing. I love it.",
           img: "https://avatar.vercel.sh/jenny",
      },
      {
           name: "James",
           username: "@james",
+          post: "software developer",
           body: "I'm at a loss for words. This is amazing. I love it.",
           img: "https://avatar.vercel.sh/james",
+     },
+];
+
+export const highlightsSlides = [
+     {
+          id: 1,
+          textLists: [
+               "Enter A17 Pro.",
+               "Game‑changing chip.",
+               "Groundbreaking performance.",
+          ],
+          video: highlightFirstVideo,
+          videoDuration: 4,
+     },
+     {
+          id: 2,
+          textLists: ["Titanium.", "So strong. So light. So Pro."],
+          video: highlightSecondVideo,
+          videoDuration: 5,
+     },
+     {
+          id: 3,
+          textLists: [
+               "iPhone 15 Pro Max has the",
+               "longest optical zoom in",
+               "iPhone ever. Far out.",
+          ],
+          video: highlightThirdVideo,
+          videoDuration: 2,
+     },
+     {
+          id: 4,
+          textLists: ["All-new Action button.", "What will yours do?."],
+          video: highlightFourthVideo,
+          videoDuration: 3.63,
      },
 ];

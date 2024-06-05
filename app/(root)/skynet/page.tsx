@@ -6,6 +6,7 @@ import Image from "next/image";
 import { wordsToAnimateSkynet } from "@/constants";
 import { FlipWords } from "@/components/ui/flip-words";
 import SkynetPage from '@/components/pages/SkynetPage';
+import SkynetHighlightsPage from '@/components/pages/SkynetHighlightsPage';
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 export default function page() {
@@ -41,6 +42,8 @@ export default function page() {
                </ContainerScroll>
 
                <SkynetPage />
+
+               <SkynetHighlightsPage />
           </section>
      );
 }
