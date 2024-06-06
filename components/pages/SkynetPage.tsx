@@ -26,7 +26,7 @@ export default function SkynetPage() {
                                              alt="blog thumbnail"
                                              height="1000"
                                              width="1000"
-                                             className="rounded-lg my-5 object-cover"
+                                             className="rounded-lg my-5 object-cover border bg-transparent p-2"
                                         />
                                    )}
                                    {item.description}

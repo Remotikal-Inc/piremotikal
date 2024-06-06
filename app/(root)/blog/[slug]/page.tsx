@@ -57,7 +57,7 @@ export default async function BlogArticle({
                     </span>
                     <div className="mt-3 text-center">
                          {data.tags && data.tags.map((tag: any, index: any) => (
-                              <span key={index} className="inline-block bg-gray-200 dark:bg-gray-700 text-sm text-gray-600 dark:text-gray-300 px-2 py-1 rounded line-clamp-3 mr-2">
+                              <span key={index} className="inline-block bg-neutral-200 dark:bg-gray-700 text-sm text-gray-900 dark:text-neutral-300 px-2 py-1 rounded line-clamp-3 mr-2">
                                    <Link href={`/tag/${tag.name}`}>
                                         #{tag.name}
                                    </Link>
@@ -87,7 +87,7 @@ export default async function BlogArticle({
                <hr className="mt-10" />
 
                <div className="dark:text-neutral-400 max-w-sm ml-auto mt-10 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary text-right">
-                    ~ Written by <span className="dark:text-neutral-200 font-semibold">{data.authorName}
+                    ~ Written by <span className="dark:text-neutral-200 text-neutral-900 font-semibold">{data.authorName}
                     <br/>
                     ({data.authorPost})</span>
                </div>

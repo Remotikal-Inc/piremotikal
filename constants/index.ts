@@ -241,7 +241,7 @@ export const highlightsSlides = [
           id: 2,
           textLists: ["Titanium.", "So strong. So light. So Pro."],
           video: highlightSecondVideo,
-          videoDuration: 5,
+          videoDuration: 2,
      },
      {
           id: 3,
@@ -251,7 +251,7 @@ export const highlightsSlides = [
                "iPhone ever. Far out.",
           ],
           video: highlightThirdVideo,
-          videoDuration: 2,
+          videoDuration: 5,
      },
      {
           id: 4,

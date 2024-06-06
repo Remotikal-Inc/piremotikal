@@ -57,12 +57,9 @@
 }
 
 body {
-     color: white;
      width: 100dvw;
      overflow-x: hidden;
      height: 100%;
-     background: #000;
-     border-color: #3b3b3b;
      user-select: none;
 }
 
@@ -81,7 +78,7 @@ canvas {
      }
      
      .control-btn {
-          @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center
+          @apply ml-4 p-4 rounded-full bg-neutral-800 backdrop-blur flex-center
      }
 
      .video-carousel_container {

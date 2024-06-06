@@ -1,6 +1,6 @@
 import highlightFirstmv from "../public/highlight-first.mp4";
-import highlightSectmv from "../public/hightlight-third.mp4";
-import highlightThirdmv from "../public/hightlight-sec.mp4";
+import highlightSectmv from "../public/hightlight-sec.mp4";
+import highlightThirdmv from "../public/hightlight-third.mp4";
 import highlightFourthmv from "../public/hightlight-fourth.mp4";
 
 import replay from "../public/replay.svg";
