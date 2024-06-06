@@ -32,19 +32,19 @@ export default function page() {
                     }
                >
                     <Image
-                         src="/skynetMobile.jfif" // TODO
+                         src="/skynetMobile.jfif"
                          alt="hero"
                          height={720}
                          width={1400}
-                         className="mx-auto rounded-2xl object-cover h-full object-left-top inline-block md:hidden"
+                         className="mx-auto rounded-2xl object-cover h-full object-left-top inline-block lg:hidden"
                          draggable={false}
                     />
                     <Image
-                         src={`/skynetDesktop.jfif`} // TODO
+                         src={`/skynetDesktop.jfif`}
                          alt="hero"
                          height={720}
                          width={1400}
-                         className="mx-auto rounded-2xl object-cover h-full object-left-top hidden md:inline-block"
+                         className="mx-auto rounded-2xl object-cover h-full object-left-top hidden lg:inline-block"
                          draggable={false}
                     />
                </ContainerScroll>
