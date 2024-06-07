@@ -5,22 +5,41 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import { wordsToAnimateSkynet } from "@/constants";
 import { FlipWords } from "@/components/ui/flip-words";
-import SkynetPage from '@/components/pages/SkynetPage';
-import SkynetHighlightsPage from '@/components/pages/SkynetHighlightsPage';
+import SkynetBlogPage from '@/components/sections/SkynetBlogSection';
+import SkynetHighlightsPage from '@/components/sections/SkynetHighlightsSection';
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import AnnouncementCard from "@/components/AnnouncementCard";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function page() {
      return (
           <section className="flex flex-col overflow-hidden">
-               <div className="mt-20 md:mt-48 text-center flex flex-col gap-4 text-neutral-400 h-[40vh] justify-center">
-                    <p>not just another average text-to-text model</p>
+               <div className="my-32 mt-20 md:my-48 text-center flex flex-col gap-4 text-neutral-400 h-[40vh] justify-center">
+                    <div className="mb-4 flex justify-center">
+                         {/* TODO */}
+                         <AnnouncementCard text="⇓ Inside: Skynet Neural Processor ⇓" link="#editThisLater" />
+                    </div>
                     <VelocityScroll
-                         text="Introducing Skynet"
+                         text="Introducing SKYNET ✦"
                          default_velocity={5}
                          className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
                     />
-                    <p className="mt-2">nope, this is not based on openai&apos;s api key</p>
+                    <div className="mt-4 gap-3 inline-flex justify-center">
+                         <Link href="#blog">
+                              <Button size={"lg"} className="dark:hover:bg-neutral-300">
+                                   Read More
+                              </Button>
+                         </Link>
+                         <Link href="#highlights">
+                              <Button variant={"outline"} size={"lg"} className="dark:bg-neutral-900 dark:border-neutral-900 dark:hover:bg-neutral-800">
+                                   Get The Highlights
+                              </Button>
+                         </Link>
+                    </div>
                </div>
+
+               <div id="highlights"><SkynetHighlightsPage /></div>
 
                <ContainerScroll
                     titleComponent={
@@ -49,9 +68,7 @@ export default function page() {
                     />
                </ContainerScroll>
 
-               <SkynetPage />
-
-               <SkynetHighlightsPage />
+               <div id="blog"><SkynetBlogPage /></div>
           </section>
      );
 }

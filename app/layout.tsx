@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import SkynetHighlightsPage from "@/components/pages/SkynetHighlightsPage";
+import SkynetHighlightsPage from "@/components/sections/SkynetHighlightsSection";
 
 export const metadata: Metadata = {
      title: "Remotikal, Inc.",

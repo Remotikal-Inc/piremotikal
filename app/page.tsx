@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '@/components/pages/Hero'
-import VisionPage from '@/components/pages/VisionPage'
-import ContactPage from '@/components/pages/ContactPage'
-import MissionPage from '@/components/pages/MissionPage'
-import TestimonialsPage from '@/components/pages/TestimonialsPage'
-import StatisticsPage from '@/components/pages/StatisticsPage'
+import Hero from '@/components/sections/Hero'
+import VisionPage from '@/components/sections/VisionSection'
+import ContactPage from '@/components/sections/ContactSection'
+import MissionPage from '@/components/sections/MissionSection'
+import TestimonialsPage from '@/components/sections/TestimonialsSection'
+import StatisticsPage from '@/components/sections/StatisticsSection'
 
 export default function Home() {
      return (

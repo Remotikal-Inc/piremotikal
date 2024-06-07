@@ -1,50 +1,6 @@
 import { highlightFirstVideo, highlightSecondVideo, highlightThirdVideo, highlightFourthVideo } from "@/utils";
 import { COBEOptions } from "cobe";
 
-export const products = [
-     {
-          id: 1,
-          name: "Sketchware",
-          image: "https://sketchware-docs.vercel.app/img/logo.png",
-          description: "Sketchware lets you build mobile apps using lego-like blocks. Block language lets you go beyond prebuilt widgets, allowing your application to be flexible and scalable.",
-          links: {
-               homepage: "https://sketchware.remotikal.com",
-               github: "https://github.com/Sketchware-Pro/Sketchware-Pro",
-               website: "https://sketchware.pro"
-          }
-     },
-     {
-          id: 2,
-          name: "BlissOS",
-          image: "TODO",
-          description: "Android for your PC. An Android-based open source OS that incorporates many optimizations, features, and that supports many more devices.",
-          links: {
-               github: "https://github.com/BlissRoms-x86",
-               website: "https://blissos.org/"
-          }
-     },
-     {
-          id: 3,
-          name: "Renux",
-          image: "TODO",
-          description: "A kernel that can run Android, Linux, and Windows software independently together. Coming Soon.",
-          links: {
-               github: "TODO",
-               website: "TODO"
-          }
-     },
-     {
-          id: 4,
-          name: "Refresh Browser",
-          image: "TODO",
-          description: "A browser that uses Tor and Pi TurboNet which pipes you through into decentralized network. An independent browser built by Remotikal. Coming Soon.",
-          links: {
-               github: "TODO",
-               website: "TODO"
-          }
-     }
-];
-
 export const footerLinks = [
      {
           id: 1,
@@ -258,36 +214,5 @@ export const highlightsSlides = [
           textLists: ["All-new Action button.", "What will yours do?."],
           video: highlightFourthVideo,
           videoDuration: 3.63,
-     },
-];
-
-export const projects = [
-     {
-          id: 1,
-          title: "3D Solar System Planets to Explore",
-          des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-          img: "",
-          link: "/ui.earth.com",
-     },
-     {
-          id: 2,
-          title: "Yoom - Video Conferencing App",
-          des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-          img: "",
-          link: "/ui.yoom.com",
-     },
-     {
-          id: 3,
-          title: "AI Image SaaS - Canva Application",
-          des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-          img: "",
-          link: "/ui.aiimg.com",
-     },
-     {
-          id: 4,
-          title: "Animated Apple Iphone 3D Website",
-          des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-          img: "",
-          link: "/ui.apple.com",
      },
 ];

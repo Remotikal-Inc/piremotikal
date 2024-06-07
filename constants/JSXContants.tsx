@@ -1,8 +1,8 @@
 import OrbitingCircles from "@/components/magicui/orbiting-circles";
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {}
+interface IconProps extends React.SVGProps<SVGSVGElement> { }
 
-export const skynetPageContent = [
+export const SkynetBlogPageContent = [
      {
           title: "Introducing SNPs (Skynet Neural Processor)",
           description: (

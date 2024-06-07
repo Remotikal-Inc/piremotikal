@@ -173,7 +173,7 @@ const VideoCarousel = () => {
                                              id="video"
                                              playsInline
                                              className={`${list.id === 2 ? "translate-x-44" : ""
-                                                  } pointer-events-none object-cover`}
+                                                  } pointer-events-none object-cover h-full`}
                                              preload="auto"
                                              muted
                                              ref={(el) => {

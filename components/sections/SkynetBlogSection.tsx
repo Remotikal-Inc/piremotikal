@@ -3,13 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import { skynetPageContent } from "@/constants/JSXContants";
+import { SkynetBlogPageContent } from "@/constants/JSXContants";
 
-export default function SkynetPage() {
+export default function SkynetBlogPage() {
      return (
           <TracingBeam className="md:px-8">
                <div className="max-w-4xl mx-auto antialiased pt-4 relative">
-                    {skynetPageContent.map((item, index) => (
+                    {SkynetBlogPageContent.map((item, index) => (
                          <div key={`content-${index}`} className="mb-10">
                               <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-2">
                                    {item.badge}
@@ -31,8 +31,6 @@ export default function SkynetPage() {
                                    )}
                                    {item.description}
                               </div>
-
-                              <hr className="mt-10" />
                          </div>
                     ))}
                </div>
