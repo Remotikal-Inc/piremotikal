@@ -32,11 +32,9 @@ async function getData() {
 export default async function page() {
      const { tags, posts } = await getData();
 
-     // console.log(posts);
-
      return (
-          <section className="my-28 flex flex-col gap-8">
-               <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal text-neutral-900 dark:text-neutral-100">Remotikal Blog</h1>
+          <section className="mb-28 md:my-32 flex flex-col gap-8">
+               <h1 className="text-3xl md:text-4xl lg:text-5xl text-neutral-900 dark:text-neutral-100 font-bold">The Remotikal Blog</h1>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     {posts && posts.map((post: any, idx: any) => (
                          <Card key={idx}>

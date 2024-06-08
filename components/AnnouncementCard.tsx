@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function AnnouncementCard({ text, link }: { text: String, link: string }) {
      return (
-          <div className='flex'>
+          <div className='flex text-black dark:text-white'>
                <Link
                     className="inline-flex items-center gap-x-2 border text-sm p-1 ps-3 rounded-full transition"
                     href={link}

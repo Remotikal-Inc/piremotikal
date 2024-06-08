@@ -5,6 +5,7 @@ import { wordsToAnimateHero } from "@/constants";
 import { FlipWords } from "@/components/ui/flip-words";
 import Link from "next/link";
 import { AISVG, CodeSVG, LinuxSVG, NeuralNetworkSVG } from "@/constants/JSXContants";
+import OrbitingCircles from "../magicui/orbiting-circles";
 
 export default function Hero() {
      return (
@@ -12,7 +13,7 @@ export default function Hero() {
                <div>
                     <div className="mb-8">
                          {/* TODO */}
-                         <AnnouncementCard text="Join the waitlist" link="#editThisLater" />
+                         <AnnouncementCard text="Check Out Skynet!" link="/skynet" />
                     </div>
 
                     <div className="md:items-center">
@@ -28,7 +29,7 @@ export default function Hero() {
                               </p>
                               {/* Buttons */}
                               <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-                                   <Link href="/about">
+                                   <Link href="https://about.remotikal.com">
                                         <Button size={"lg"} className="dark:hover:bg-neutral-300">
                                              About
                                         </Button>
@@ -53,12 +54,43 @@ export default function Hero() {
                {/* circles animation */}
                <div className="relative md:flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg hidden">
                     {/* Inner Circles */}
-                    <CodeSVG />
-                    <NeuralNetworkSVG />
+                    <OrbitingCircles
+                         className="h-[30px] w-[30px] border-none bg-transparent"
+                         duration={20}
+                         delay={20}
+                         radius={80}
+                    >
+                         <CodeSVG />
+                    </OrbitingCircles>
+
+                    <OrbitingCircles
+                         className="h-[30px] w-[30px] border-none bg-transparent"
+                         duration={20}
+                         delay={10}
+                         radius={80}
+                    >
+                         <NeuralNetworkSVG />
+                    </OrbitingCircles>
 
                     {/* Outer Circles (reverse) */}
-                    <AISVG />
-                    <LinuxSVG />
+                    <OrbitingCircles
+                         className="h-[70px] w-[70px] border-none bg-transparent"
+                         reverse
+                         radius={190}
+                         duration={20}
+                    >
+                         <AISVG />
+                    </OrbitingCircles>
+
+                    <OrbitingCircles
+                         className="h-[70px] w-[70px] border-none bg-transparent"
+                         reverse
+                         radius={190}
+                         duration={20}
+                         delay={20}
+                    >
+                         <LinuxSVG />
+                    </OrbitingCircles>
                </div>
           </main>
      )

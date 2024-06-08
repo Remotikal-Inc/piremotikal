@@ -23,7 +23,7 @@ export default function DarkThemeToggler() {
                          <span className="sr-only">Toggle theme</span>
                     </Button>
                </DropdownMenuTrigger>
-               <DropdownMenuContent align="end" className="bg-transparent dark:bg-neutral-900">
+               <DropdownMenuContent align="end" className="bg-white dark:bg-neutral-900">
                     <DropdownMenuItem onClick={() => setTheme("light")}>
                          Light
                     </DropdownMenuItem>

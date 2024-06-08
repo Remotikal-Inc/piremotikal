@@ -25,21 +25,37 @@ export default function page() {
                          default_velocity={5}
                          className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
                     />
-                    <div className="mt-4 gap-3 inline-flex justify-center">
+
+                    {/* desktop */}
+                    <div className="mt-4 gap-3 md:inline-flex justify-center hidden">
                          <Link href="#blog">
                               <Button size={"lg"} className="dark:hover:bg-neutral-300">
                                    Read More
                               </Button>
                          </Link>
                          <Link href="#highlights">
-                              <Button variant={"outline"} size={"lg"} className="dark:bg-neutral-900 dark:border-neutral-900 dark:hover:bg-neutral-800">
+                              <Button variant={"outline"} size={"lg"} className="text-neutral-800 dark:bg-neutral-950 dark:border-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-300">
+                                   Get The Highlights
+                              </Button>
+                         </Link>
+                    </div>
+
+                    {/* mobile */}
+                    <div className="mt-4 gap-3 inline-flex justify-center md:hidden">
+                         <Link href="#blog">
+                              <Button size={"sm"} className="dark:hover:bg-neutral-300">
+                                   Read More
+                              </Button>
+                         </Link>
+                         <Link href="#highlights">
+                              <Button variant={"outline"} size={"sm"} className="dark:text-neutral-300 dark:bg-neutral-900 dark:border-neutral-900 dark:hover:bg-neutral-800 text-neutral-800">
                                    Get The Highlights
                               </Button>
                          </Link>
                     </div>
                </div>
 
-               <div id="highlights"><SkynetHighlightsPage /></div>
+               <div id="highlights" className="mt-8"><SkynetHighlightsPage /></div>
 
                <ContainerScroll
                     titleComponent={

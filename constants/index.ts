@@ -5,17 +5,17 @@ export const footerLinks = [
      {
           id: 1,
           label: "Contact",
-          url: "https://www.remotikal.com/contact"
+          url: "#contact"
      },
      {
           id: 2,
           label: "Investors",
-          url: "https://www.remotikal.com/ir"
+          url: "https://investors.remotikal.com"
      },
      {
           id: 3,
           label: "Donate",
-          url: "https://www.remotikal.com/donate"
+          url: "https://donate.remotikal.com"
      },
      {
           id: 4,
@@ -52,7 +52,7 @@ export const navbarItems = [
      {
           id: 2,
           name: "About",
-          slug: "/about"
+          slug: "https://about.remotikal.com"
      },
      {
           id: 3,
@@ -62,7 +62,7 @@ export const navbarItems = [
      {
           id: 4,
           name: "Investors",
-          slug: "/investors"
+          slug: "https://investors.remotikal.com"
      },
      {
           id: 5,
@@ -216,3 +216,5 @@ export const highlightsSlides = [
           videoDuration: 3.63,
      },
 ];
+
+export const getFormURL = "";

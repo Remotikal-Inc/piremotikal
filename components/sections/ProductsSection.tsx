@@ -10,7 +10,8 @@ import {
 export default function ProductsPage() {
      return (
           <section className="md:mt-10">
-               <h2 className="text-3xl font-bold lg:text-4xl mb-10">Our Products</h2>
+               <h2 className="text-3xl font-bold lg:text-4xl mb-2">Our Products</h2>
+               <p className="mb-10 dark:text-neutral-200 text-neutral-800">Products that cater to all needs, making a difference for everyone.</p>
                <BentoGrid className="md:auto-rows-[20rem]">
                     {products.map((item, i) => (
                          <BentoGridItem

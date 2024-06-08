@@ -1,5 +1,5 @@
 import { footerLinks } from "@/constants";
-import { GithubIconSVG, InstagramIconSVG, LinkedinIconSVG, TwitterIconSVG } from "@/constants/JSXContants";
+import { footerSocialHandles } from "@/constants/JSXContants";
 import Link from "next/link"
 
 export default function Footer() {
@@ -12,12 +12,12 @@ export default function Footer() {
                          </svg>
                          <h1>Unlocking the future with simplicity and innovation, shaping tomorrow&apos;s tech landscape.</h1>
                     </blockquote>
-                    <p className="text-lg md:text-xl"><span className="text-lg sm:text-xl md:text-2xl font-bold">Aayush Sharma</span>{" "}(CEO & Co-Founder.)</p>
+                    <p className="text-lg md:text-xl"><span className="text-lg sm:text-xl md:text-2xl font-bold">~ Aayush Sharma</span>{" "}(CEO & Co-Founder.)</p>
                </div>
                <div className="mx-auto flex flex-col items-center justify-between gap-8 md:flex-row md:gap-0">
                     <div className="gap-2">
                          <Link href="/" className="text-lg font-semibold underline underline-offset-2">Remotikal, Inc.</Link>
-                         <p>Remotikal, Inc. 2019 - 2024. All Rights Rights Reserved. Copyright Remotikal, Inc.</p>
+                         <p>Remotikal, Inc. 2019 - 2024.<br />All Rights Rights Reserved. Copyright Remotikal, Inc.</p>
                     </div>
                     <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
                          <nav className="inline-flex flex-row items-center gap-6 flex-wrap justify-center">
@@ -28,21 +28,18 @@ export default function Footer() {
                               ))}
                          </nav>
                          <div className="flex gap-4 mt-4 md:mt-0">
-                              <Link href="#" aria-label="Twitter" prefetch={false}>
-                                   <TwitterIconSVG className="h-5 w-5" />
-                              </Link>
-                              <Link href="#" aria-label="GitHub" prefetch={false}>
-                                   <GithubIconSVG className="h-5 w-5" />
-                              </Link>
-                              <Link href="#" aria-label="LinkedIn" prefetch={false}>
-                                   <LinkedinIconSVG className="h-5 w-5" />
-                              </Link>
-                              <Link href="#" aria-label="Instagram" prefetch={false}>
-                                   <InstagramIconSVG className="h-5 w-5" />
-                              </Link>
+                              {footerSocialHandles.map((item, i) => (
+                                   <Link key={i} href={item.url} aria-label={item.label} prefetch={false}>
+                                        {item.icon}
+                                   </Link>
+                              ))}
                          </div>
                     </div>
                </div>
+
+               <hr className="h-px my-14 md:py-0 bg-gray-200 border-0 dark:bg-gray-700" />
+
+               <div className="mt-8">Built with ♥ by <Link href="https://arjuncodess.vercel.app" className="font-semibold underline underline-offset-2">@ArjunCodess</Link></div>
           </footer>
      );
 }
