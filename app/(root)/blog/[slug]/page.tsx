@@ -38,7 +38,7 @@ export default async function BlogArticle({
                     <Image
                          src={urlFor(value).url()}
                          alt="Image"
-                         className="rounded-lg"
+                         className="rounded-lg mt-8 border mx-auto"
                          width={800}
                          height={800}
                     />
@@ -77,7 +77,7 @@ export default async function BlogArticle({
 
                <hr className="mt-8" />
 
-               <div className="w-full mt-8 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+               <div className="w-full mt-8 mx-auto prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
                     <PortableText
                          value={data.content}
                          components={PortableTextComponent}
